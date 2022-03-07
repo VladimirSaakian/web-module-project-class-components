@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoList from './TodoList';
-import TodoForm from './Form';
+import Form from './Form';
 
 
 class App extends React.Component {
@@ -68,7 +68,7 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <TodoList handleToggle={this.handleToggle} todos = {todos}/>
-        <TodoForm handleAdd = {this.handleAdd} />
+        <Form handleAdd = {this.handleAdd} />
         <button onClick={this.handleClear}>Clear</button>
       </div>
     );
