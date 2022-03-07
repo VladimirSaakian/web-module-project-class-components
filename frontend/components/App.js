@@ -34,7 +34,7 @@ class App extends React.Component {
   });
   }
 
-  handleClear = () =>{
+  handleHide = () =>{
     this.setState({
       ...this.state,
       Todos: this.state.todos.filter(todo => {
@@ -69,7 +69,7 @@ class App extends React.Component {
         <h2>Welcome to your Todo App!</h2>
         <TodoList handleToggle={this.handleToggle} todos = {todos}/>
         <Form handleAdd = {this.handleAdd} />
-        <button onClick={this.handleClear}>Hide</button>
+        <button onClick={this.handleHide}>Hide</button>
       </div>
     );
   }
